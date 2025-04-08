@@ -10,18 +10,17 @@ const countVowels = (WordStart) => {
 
     if (
       currentChar === "a" ||
-      currentChar === "a" ||
-      currentChar === "a" ||
-      currentChar === "a" ||
-      currentChar === "a"
+      currentChar === "e" ||
+      currentChar === "i" ||
+      currentChar === "o" ||
+      currentChar === "u"
     ) {
       vowelsNumber += 1;
     }
   }
   return vowelsNumber;
 };
-console.log(countVowels(word));
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(countVowels(word));
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
