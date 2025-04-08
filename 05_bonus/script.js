@@ -11,14 +11,18 @@ const name = "Mario";
 
 const hourHello = (namehello) => {
   let hourPlusname = "";
-  dateHour = d = new Date();
+  d = new Date();
+  dateHour = d;
   hourPlusname = dateHour + " " + namehello;
 
-  if (d.setHours(0 - 12) === "buongiorno");
-  else if (d.setUTCHours(12 - 16) === "pomeriggio");
-  else {
-    d.setUTCHours(17 - 23) === "pomeriggio";
+  if (d.setHours(0 - 12)) {
+    dateHour === "buongiorno";
+  } else if (d.setHours(12 - 16)) {
+    dateHour === "buon pomeriggio";
+  } else {
+    dateHour === "buonasera";
   }
+
   return hourPlusname;
 };
 // Invoca la funzione qui e stampa il risultato in console
