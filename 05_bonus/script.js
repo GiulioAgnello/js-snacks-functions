@@ -9,21 +9,20 @@ const name = "Mario";
 
 // Dichiara la funzione qui.
 
-const hourHello = (namehello) => {
-  let hourPlusname = "";
-  d = new Date();
-  dateHour = d;
-  hourPlusname = dateHour + " " + namehello;
+const hourHello = (name) => {
+  let greet = "Buongiorno";
+  const date = new Date();
+  const hour = date.getHours();
 
-  if (d.setHours(0 - 12)) {
-    dateHour === "buongiorno";
-  } else if (d.setHours(12 - 16)) {
-    dateHour === "buon pomeriggio";
+  if (hour < 13) {
+    greet = "buongiorno";
+  } else if (hour <= 17) {
+    greet = "buon pomeriggio";
   } else {
-    dateHour === "buonasera";
+    greet = "buonasera";
   }
 
-  return hourPlusname;
+  return `${greet} ${name}`;
 };
 // Invoca la funzione qui e stampa il risultato in console
 
