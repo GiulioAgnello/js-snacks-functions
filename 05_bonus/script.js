@@ -10,14 +10,16 @@ const name = "Mario";
 // Dichiara la funzione qui.
 
 const hourHello = (namehello) => {
-  dateHour = new Date() + " " + namehello;
+  let hourPlusname = "";
+  dateHour = d = new Date();
+  hourPlusname = dateHour + " " + namehello;
 
-  if ((dateHour = new Date(0, 13) === "buongiorno"));
-  else if ((dateHour = new Date(14, 17) === "pomeriggio"));
+  if ((d = new Date(0, 13) === "buongiorno"));
+  else if ((d = new Date(14, 17) === "pomeriggio"));
   else {
-    dateHour = new Date(15, 23) === "pomeriggio";
+    d = new Date(15, 23) === "pomeriggio";
   }
-  return dateHour;
+  return hourPlusname;
 };
 // Invoca la funzione qui e stampa il risultato in console
 
