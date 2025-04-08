@@ -3,8 +3,9 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
-let firstCharlist = [];
+
 const firstChar = (nameList) => {
+  let firstCharlist = [];
   for (let i = 0; i < nameList.length; i++) {
     const currentChar = nameList[i];
 

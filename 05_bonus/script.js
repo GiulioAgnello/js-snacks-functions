@@ -14,10 +14,10 @@ const hourHello = (namehello) => {
   dateHour = d = new Date();
   hourPlusname = dateHour + " " + namehello;
 
-  if ((d = new Date(0, 13) === "buongiorno"));
-  else if ((d = new Date(14, 17) === "pomeriggio"));
+  if (d.setHours(0 - 12) === "buongiorno");
+  else if (d.setUTCHours(12 - 16) === "pomeriggio");
   else {
-    d = new Date(15, 23) === "pomeriggio";
+    d.setUTCHours(17 - 23) === "pomeriggio";
   }
   return hourPlusname;
 };
